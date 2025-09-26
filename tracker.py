@@ -20,6 +20,10 @@ def check_for_changes():
                 print("Ticket availability detected!")
                 print(f"URL: {URL}")
                 return True
+            
+        if "resale" in soup.get_text().lower():
+            print("Resale platform mentioned!")
+            return True
 
     except requests.exceptions.RequestException as e:
         print(f"Error checking website: {e}")
@@ -28,6 +32,7 @@ def check_for_changes():
 
 if __name__ == "__main__":
     if check_for_changes():
+        print(f"URL: {URL}")
         input("Press Enter to exit...") 
     else:
         input("No updates\nPress enter to exit...")
