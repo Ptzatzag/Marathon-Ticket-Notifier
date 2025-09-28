@@ -1,5 +1,5 @@
 ## Marathon Ticket Availability Tracker
-This repository contains a simple Python script for checking the availability of resale tickets for the Copenhagen Marathon. It was built as a personal learning project in automation and scheduling, and can be used as a lightweight notifier when tickets appear.
+This repository contains a simple Python script that checks when the resale ticket platform for the Copenhagen Marathon goes live. It was built as a personal learning project in automation and scheduling, and can be used as a lightweight notifier when tickets appear.
 
 ## 📁 Repository Contents
 - **`tracker.py`**,    Script that monitors the resale platform’s main page and notifies on changes or when “resale” is mentioned
